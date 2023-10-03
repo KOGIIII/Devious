@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "devious",
+	"version": "${version}",
+	"name": "Devious",
+	"description": "This Is An Early Development Version Of Devious (A Hacked MC Client Made By KOG1",
+	"authors": [
+		"KOG1"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/devious/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"kog1.devious.Devious"
+		],
+		"client": [
+			"kog1.devious.DeviousClient"
+		],
+		"fabric-datagen": [
+			"kog1.devious.DeviousDataGenerator"
+		]
+	},
+	"mixins": [
+		"devious.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
